@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Greeting App By Nikhil Chauhan
+        </title>
+    </head>
+    <body style="background-color: aqua;font-size: 40px;">
+        <h1>Greeting App</h1>
+    <h2 id="msg"></h2>
+    <script>
+        let msg = document.getElementById("msg");
+        let d = new Date();
+        let hr =d.getHours();
+        if(hr<12)
+            msg.innerHTML = "Good Morning";
+        else if (hr<16)
+            msg.innerHTML = "Good Afternoon";
+        else
+            msg.innerHTML = "Good Evening";
+    </script>
+    </body>
+</html>
